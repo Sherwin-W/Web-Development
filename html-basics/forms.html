@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Forms Demo</h1>
+  <!-- http://127.0.0.1:5500/tacos?username=sherwin&password=pass&color=%23fafafa&num=4 -->
+  <!-- get requests show the info in the url -->
+  <button>OUTSIDE FORM BUTTON!</button>
+  <hr>
+  <form action="/tacos">
+    <!-- <button type="button">PLEASE DON'T PRESS!</button> -->
+    <!-- default type submits, button does not submit the form -->
+    <p>
+      <label for="username">Enter a Username:</label>
+      <input type="text" placeholder="username" id="username" name="username">
+      <!-- for and id ties the two elements together -->
+      <!-- name makes the form submit to http://127.0.0.1:5500/tacos?username=sdf -->
+    </p>
+
+    <p>
+      <label for="password">Enter a Password:</label>
+      <input type="password" placeholder="password" id="password" name="password">
+    </p>
+
+    <button>MIDDLE BUTTON!</button>
+
+    <p>
+      <label for="color">Enter a Color:</label>
+      <input type="color" id="color" name=color>
+    </p>
+
+    <p>
+      <label>
+        Enter a Number:
+        <input type="number" placeholder="enter a number" name="num">
+      </label>
+      <!-- nesting a input inside a label doesnt need for and id attributes -->
+    </p>
+
+    <button>Submit</button>
+    <!-- on submit, does the action of the form because the button is in the form -->
+    <input type="submit" value="Click Me!">
+  </form>
+  <!-- action specifies where the data should be sent when the form is submitted -->
+  <!-- when form is submitted, http request is also sent -->
+
+  <h2>Hijacking Searches</h2>
+  <h3>Search Reddit</h3>
+  <form action="https://www.reddit.com/search">
+    <input type="text" name="q">
+    <!-- reddit servers expect the name q -->
+    <button>Search Reddit</button>
+  </form>
+  <h3>Search Google</h3>
+  <form action="https://www.google.com/search">
+    <input type="text" name="q">
+    <button>Search Google</button>
+  </form>
+  <h3>Search YouTube</h3>
+  <form action="https://www.youtube.com/results">
+    <input type="text" name="search_query">
+    <!-- if no button, then enter submits text field -->
+    <button>Search YouTube</button>
+  </form>
+
+  <h2>More Inputs</h2>
+  <form action="/birds">
+    <input type="checkbox" name="agree_tos" id="agree">
+    <label for="agree">I agree to everything</label>
+    <button type="submit">Submit</button>
+    <!-- http://127.0.0.1:5500/birds?agree_tos=on -->
+
+    <p>
+      <label for="xs">XS:</label>
+      <input type="radio" name="size" id="xs" value="xs">
+      <label for="s">S:</label>
+      <input type="radio" name="size" id="s" value="s">
+      <label for="m">M:</label>
+      <input type="radio" name="size" id="m" value="m">
+      <!-- http://127.0.0.1:5500/birds?size=m -->
+      <!-- same name associates them together, and only one can be selected at a time -->
+      <!-- value is what it is that will be submitted to the server -->
+    </p>
+    <p>
+      <label for="meal">Please Select an Entree</label>
+      <select name="mealselector" id="meal">
+        <!-- name shows as "name = fish", id and for connect together -->
+        <option value="fish">Fish</option>
+        <option value="veggies">Veggies</option>
+        <option value="steak">Steak</option>
+        <option value="chicken">Chicken</option>
+      </select>
+    </p>
+  </form>
+</body>
+
+</html>
