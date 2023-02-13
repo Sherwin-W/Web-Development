@@ -15,7 +15,7 @@
   <button>OUTSIDE FORM BUTTON!</button>
   <hr>
   <form action="/tacos">
-    <!-- <button type="button">PLEASE DON'T PRESS!</button> -->
+    <button type="button">This Button Does Not Submit</button>
     <!-- default type submits, button does not submit the form -->
     <p>
       <label for="username">Enter a Username:</label>
@@ -39,7 +39,7 @@
     <p>
       <label>
         Enter a Number:
-        <input type="number" placeholder="enter a number" name="num">
+        <input type="number" placeholder="enter a number" name="num" min="1" max="10">
       </label>
       <!-- nesting a input inside a label doesnt need for and id attributes -->
     </p>
@@ -98,6 +98,33 @@
         <option value="chicken">Chicken</option>
       </select>
     </p>
+    <p>
+      <label for="cheese">Amount of Cheese:</label>
+      <input type="range" id="cheese" min="1" max="100" step="7" value=75 name="cheese_level">
+    </p>
+    <p>
+      <label for="requests">Any Special Requests?</label>
+    <div>
+      <textarea name="Requests?" id="requests" cols="30" rows="5" placeholder="Type Your Request"></textarea>
+      <!-- textarea is not an input, like button -->
+    </div>
+
+    </p>
+  </form>
+
+  <h2>Validations Demo</h2>
+  <form action="/dummy">
+    <label for="first">Enter First Name</label>
+    <input type="text" name="first" id="first" minlength="5" maxlength="8">
+    <!-- required makes a value needed to be entered (server side) -->
+    <p>
+      <label for="username">Username</label>
+    </p>
+    <p>
+      <label for="email">Enter an Email</label>
+      <input type="email" name="email" id="email" required>
+    </p>
+    <button>Submit</button>
   </form>
 </body>
 
