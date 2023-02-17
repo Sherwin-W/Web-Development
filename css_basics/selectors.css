@@ -1,0 +1,104 @@
+/* *{
+  background-color: cyan;
+} */
+
+body {
+  background-color: #f1faee;
+}
+
+button {
+  font-size: 30px;
+  background-color: #a8dadc;
+}
+
+h1,
+h2 {
+  color: #1d3557;
+}
+
+#signup {
+  background-color: #1d3667;
+  color: #f1faee;
+}
+
+span {
+  color: #457b9d;
+}
+
+.tag {
+  background-color: #e63946;
+  color: #f1faee;
+  font-size: 16px;
+}
+
+/* use . for class, # for id */
+
+.post a {
+  color: #457b9d;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* space between elements indicates the second is a descendant of the first one */
+
+footer a {
+  color: #e63946;
+}
+
+h2+button {
+  font-size: 20px;
+}
+
+/* buttons directly after h2's, not decendant but same level*/
+
+footer>a {
+  color: #a8dadc;
+}
+
+/* DIRECT decendant, not any decendant, but only those one level down */
+
+input[type="password"] {
+  color: greenyellow;
+}
+
+a[href*="google"] {
+  color: magenta;
+}
+
+/* *="example" means contains example
+$=".org" means ends in .org
+~="log" class attribute contains word logo */
+
+.post button:hover {
+  background-color: #e63946;
+  color: #f1faee;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}
+
+.post button:active {
+  background-color: #02c39a;
+}
+
+.post:nth-of-type(2n) {
+  background-color: #dfe8dc;
+}
+
+h2::first-letter {
+  font-size: 50px;
+}
+
+p::first-line {
+  color: purple;
+}
+
+p::selection {
+  background-color: #fcbf49;
+}
+
+/* button{
+  background-color: magenta !important;
+} */
+/* !important makes the style MOST specific on the page(bad practice) */

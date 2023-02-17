@@ -1,0 +1,43 @@
+div {
+  width: 200px;
+  height: 200px;
+  /* only controls the content area, not border nor padding unless styled so*/
+}
+
+h1 {
+  background-color: #e5989b;
+  width: 100px;
+  padding-left: 100px;
+  padding-top: 50px;
+}
+
+#one {
+  background-color: #ffd6ff;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  /* box-sizing: border-box; */
+}
+
+#two {
+  background-color: #e7c6ff;
+  border-color: #b8c0ff;
+  border-width: 3px;
+  border-style: dashed;
+  border-left-width: 8px;
+  padding-right: 50px;
+}
+
+#three {
+  background-color: #c8b6ff;
+  border: 4px dotted white;
+  /* shorthand property sets multiple properties in one go */
+
+  border-radius: 50% 40% 30% 20%;
+  /* around the clock starting top left corner */
+}
+
+button{
+  padding: 20px 50px;
+  /* all four sides, vertical|horizontal, top|horizontal|bottom, top|right|bottom|left */
+}

@@ -1,0 +1,20 @@
+h1 {
+  text-align: center;
+  font-weight: 400;
+  text-decoration: #f78120 underline;
+  letter-spacing: 15px;
+  font-size: 80px;
+  /* px is not a good length of measurement for responsive websites */
+  font-family: fantasy;
+  /* font-family: CopperPlate, Segoe UI, Verdana, Arial, sans-serif; */
+  /* font stack gives alternate fonts if first one does not work, and so on */
+  /* sans-serif is a family of fonts; one is picked to be the backup */
+}
+
+*/ a {
+  text-decoration: none;
+}
+
+p {
+  line-height: 2;
+}

@@ -1,0 +1,20 @@
+body {
+  color: purple;
+}
+
+/* elements can inherit through body */
+
+section {
+  color: aqua;
+}
+
+form {
+  color: yellowgreen;
+}
+
+button,
+input {
+  color: inherit;
+}
+
+/* makes certain elements that don't inherit by default inherit from closest parent */
