@@ -1,0 +1,69 @@
+section {
+  background-color: #ffb5a7;
+  width: 800px;
+  height: 800px;
+}
+
+div {
+  background-color: #f8edeb;
+  width: 50%;
+  height: 50%;
+  /* percentage is based on parent element for width and height */
+}
+
+h1 {
+  font-size: 40px;
+  border: 1px solid black;
+  line-height: 200%;
+  /* line height percentages is based on the font size */
+}
+
+h2 {
+  font-size: 2em;
+  /* em is the measurement of the parent for font-size; parent of h2 is article in this case */
+  margin-left: 1em;
+  /* margin's ems refers to the size of the element itself */
+  /* thus, margin will scale with changes in sizes of the element */
+}
+
+#ems h3 {
+  font-size: 1.5em;
+}
+
+#ems p {
+  font-size: 0.8em;
+}
+
+#ems {
+  font-size: 25px;
+}
+
+button {
+  font-size: 1em;
+  padding: 0 1em;
+  border-radius: 0.5em;
+  background-color: #588157;
+  color: White;
+}
+
+#ems ul {
+  font-size: 1.5em;
+  /* nesting elements grows the size exponentially with ems */
+  /* rem solves this problem, because refers to the root element's size */
+}
+
+#rems h3 {
+  font-size: 1.5rem;
+}
+
+#rems p {
+  font-size: 0.8rem;
+}
+
+#rems {
+  font-size: 25px;
+}
+
+#rems ul{
+  font-size: 1.5rem;
+}

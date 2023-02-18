@@ -1,0 +1,31 @@
+span {
+  background-color: palegoldenrod;
+  border: 1px solid black;
+  width: 500px;
+  /* inline elements have width and height ignored */
+  padding: 50px;
+  /* inline elements' padding doesn't push other elements away */
+  margin: 50px;
+  /* only respected horizontally inline */
+}
+
+h1 {
+  background-color: palevioletred;
+  border: 1px solid black;
+  width: 300px;
+  height: 200px;
+  /* block elements' width and height is respected by other elements */
+  padding: 50px;
+  margin: 100px;
+}
+
+div {
+  height: 200px;
+  width: 200px;
+  background-color: olive;
+  border: 5px solid black;
+  display: inline-block;
+  margin: 50px;
+  /* now share same row inline, but the other properties are respected */
+  /* display set to none will hide the element */
+}

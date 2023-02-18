@@ -4,11 +4,23 @@ div {
   /* only controls the content area, not border nor padding unless styled so*/
 }
 
+body{
+  margin: 0;
+  /* default body margin is 8px */
+}
+
 h1 {
   background-color: #e5989b;
-  width: 100px;
+  width: 200px;
   padding-left: 100px;
   padding-top: 50px;
+  margin: 0;
+}
+
+span{
+  margin-left: 30px;
+  margin-top: 30px;
+  /* Why does it not work? Answer:Display property */
 }
 
 #one {
@@ -17,6 +29,8 @@ h1 {
   border-color: black;
   border-style: solid;
   /* box-sizing: border-box; */
+  margin-left: 50px;
+  margin-bottom: 100px;
 }
 
 #two {
@@ -26,6 +40,7 @@ h1 {
   border-style: dashed;
   border-left-width: 8px;
   padding-right: 50px;
+  margin: 200px;
 }
 
 #three {
@@ -40,4 +55,5 @@ h1 {
 button{
   padding: 20px 50px;
   /* all four sides, vertical|horizontal, top|horizontal|bottom, top|right|bottom|left */
+  /* same with margin shorthand */
 }
