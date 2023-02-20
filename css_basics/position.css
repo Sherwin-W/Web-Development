@@ -1,0 +1,44 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: #588157;
+  border: 2px solid black;
+  margin: 10px;
+  display: inline-block;
+}
+
+#middle {
+  background-color: #a3b18a;
+}
+
+#static #middle {
+  position: static;
+  top: 100px;
+  /* position static is default; position has no effect */
+}
+
+#relative #middle {
+  position: relative;
+  top: 50px;
+  /* pushes the element down 50px; positioned relative to its normal position */
+}
+
+#absolute{
+  position: relative;
+}
+
+#absolute #middle {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  /* middle element takes up no space now */
+  /* positioned to closest positioned ancestor, or intital containing block, the body in this case */
+}
+
+#fixed #middle {
+  position: fixed;
+  top: 0;
+  left: 500px;
+  /* position relative to containing block */
+  /* like absolute, removed from the document flow */
+}

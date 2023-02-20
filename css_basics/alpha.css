@@ -1,0 +1,20 @@
+section {
+  width: 500px;
+  height: 500px;
+  background-color: magenta;
+}
+
+#rgba{
+  width: 50%;
+  height: 50%;
+  background-color: #38b0e7cb;
+  /* two more digits on hex code deal with opacity */
+}
+
+#opacity {
+  width: 50%;
+  height: 50%;
+  background-color: yellow;
+  opacity: 0.5;
+  /* opacity applies to entire element, background AND text... */
+}
