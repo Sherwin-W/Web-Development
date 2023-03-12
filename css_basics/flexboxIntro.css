@@ -1,0 +1,44 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+h1 {
+  text-align: center;
+}
+
+#container {
+  background-color: #003049;
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  border: 5px solid #003049;
+  display: flex;
+  flex-direction: column;
+  /* flex direction row is default */
+  justify-content: center;
+  /* flex start depends on the main axis */
+  flex-wrap: wrap;
+  /* wraps based on main column and justify-content property */
+  /* wrap-reverse wraps the opposite direction and changes the cross axis */
+  align-items: flex-end;
+  /* align items is on the cross axis */
+  /* baseline depends on bottom of text */
+  /* align-content: center; */
+  /* space between the content caused by wrap*/
+}
+
+#container div {
+  height: 200px;
+  width: 200px;
+}
+
+/* div:nth-of-type(2) {
+  align-self: center;
+}
+
+div:nth-of-type(3) {
+  align-self: flex-end;
+} */
+
+div:nth-of-type(5) {
+  align-self: flex-start;
+}
